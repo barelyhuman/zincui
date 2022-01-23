@@ -9,10 +9,10 @@
 	},
 	"dependencies": {
 		"zinccolors": "github:barelyhuman/zinccolors",
-		"@zincui/box": "^0.0.0",
-		"@zincui/button": "^0.0.0",
-		"@zincui/input": "^0.0.0",
-		"@zincui/table": "^0.0.0",
+		"@zincui/box": "^0.0.1",
+		"@zincui/button": "^0.0.1",
+		"@zincui/input": "^0.0.1",
+		"@zincui/table": "^0.0.1",
 		"goober": "^2.1.7",
 		"goober-autoprefixer": "^1.2.1",
 		"next": "12.0.8",
@@ -22,5 +22,6 @@
 	"devDependencies": {
 		"eslint": "8.7.0",
 		"eslint-config-next": "12.0.8"
-	}
+	},
+	"version": null
 }

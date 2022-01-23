@@ -1,9 +1,31 @@
 {
 	"name": "@zincui/box",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"scripts": {
+		"prebuild": "rm -rf dist",
+		"build": "babel 'src/*.js' --out-dir=dist;pnpm run copy",
+		"copy": "shx cp src/*.d.ts dist/",
+		"prepublishOnly": "npm run build"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-react"
+		]
+	},
+	"xo": {
+		"extends": "xo-react",
+		"prettier": "true",
+		"rules": {
+			"unicorn/prefer-module": "off"
+		}
+	},
+	"dependencies": {
+		"spacery": "^0.0.6",
+		"zinccolors": "github:barelyhuman/zinccolors"
+	},
 	"devDependencies": {
 		"@agney/babel-plugin-goober-css-prop": "^0.0.0",
 		"@babel/preset-env": "^7.16.11",
@@ -12,26 +34,7 @@
 		"postcss": "^8.4.5",
 		"tailwindcss": "^3.0.7"
 	},
-	"scripts": {
-		"prebuild": "rm -rf dist",
-		"copy": "shx cp src/*.d.ts dist/",
-		"build": "babel 'src/*.js' --out-dir=dist;pnpm run copy",
-		"prepublishOnly": "npm run build"
-	},
-	"xo": {
-		"prettier": "true",
-		"extends": "xo-react",
-		"rules": {
-			"unicorn/prefer-module": "off"
-		}
-	},
-	"babel": {
-		"presets": [
-			"@babel/preset-react"
-		]
-	},
-	"dependencies": {
-		"spacery": "^0.0.6",
-		"zinccolors": "github:barelyhuman/zinccolors"
+	"publishConfig": {
+		"access": "public"
 	}
 }
