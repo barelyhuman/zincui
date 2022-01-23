@@ -1,0 +1,37 @@
+{
+	"name": "@zincui/box",
+	"version": "0.0.0",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"devDependencies": {
+		"@agney/babel-plugin-goober-css-prop": "^0.0.0",
+		"@babel/preset-env": "^7.16.11",
+		"babel-plugin-macros": "^3.1.0",
+		"babel-plugin-twin": "^1.0.2",
+		"postcss": "^8.4.5",
+		"tailwindcss": "^3.0.7"
+	},
+	"scripts": {
+		"prebuild": "rm -rf dist",
+		"copy": "shx cp src/*.d.ts dist/",
+		"build": "babel 'src/*.js' --out-dir=dist;pnpm run copy",
+		"prepublishOnly": "npm run build"
+	},
+	"xo": {
+		"prettier": "true",
+		"extends": "xo-react",
+		"rules": {
+			"unicorn/prefer-module": "off"
+		}
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-react"
+		]
+	},
+	"dependencies": {
+		"spacery": "^0.0.6",
+		"zinccolors": "github:barelyhuman/zinccolors"
+	}
+}

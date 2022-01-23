@@ -1,0 +1,54 @@
+@import url('https://unpkg.com/zinccolors@0.0.0/css/zinc.min.css');
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+	/* the brightest color */
+	--bright: var(--zinc-50);
+	/* the darkest color */
+	--dark: var(--zinc-900);
+
+	/* set of colors that control visual elements */
+	--base: var(--zinc-900);
+	--surface: var(--zinc-800);
+	--text: var(--zinc-400);
+	--dim: var(--zinc-500);
+	--dimmer: var(--zinc-600);
+	--accent: #4f46e5;
+
+	--success: #98c379;
+	--error: #e06c75;
+	--warn: #e5c07b;
+
+	/* fonts */
+	--font: 'Inter', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--base);
+	color: var(--text);
+	max-width: 1010px;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+
+pre {
+	font-size: 15px;
+}

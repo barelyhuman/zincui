@@ -1,0 +1,58 @@
+{
+	"name": "zincui",
+	"version": "0.0.0",
+	"description": "Monochromatic Design System with React Components",
+	"keywords": [],
+	"repository": "git@github.com:barelyhuman/zincui.git",
+	"license": "MIT",
+	"author": "Reaper <ahoy@barelyhuman.dev>",
+	"main": "index.js",
+	"scripts": {
+		"build:components": "pnpm -r --filter ./components run build",
+		"build:website": "pnpm -r --filter ./www run build",
+		"preinstall": "npx only-allow pnpm",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch:components": "pnpm -r --parallel --filter ./components run watch",
+		"watch:website": "pnpm -r --filter ./www run dev"
+	},
+	"xo": {
+		"extends": "xo-react",
+		"prettier": "true",
+		"rules": {
+			"unicorn/prefer-module": "off",
+			"react/prop-types": "off"
+		}
+	},
+	"prettier": {
+		"bracketSpacing": false,
+		"semi": false,
+		"singleQuote": true,
+		"trailingComma": "es5",
+		"useTabs": true
+	},
+	"eslintConfig": {
+		"extends": [
+			"xo",
+			"next/core-web-vitals"
+		]
+	},
+	"dependencies": {
+		"goober": "^2.1.7",
+		"twin.macro": "^2.8.2"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.2.3",
+		"@babel/core": "^7.2.2",
+		"@babel/preset-react": "^7.0.0",
+		"@babel/register": "^7.0.0",
+		"@changesets/cli": "^2.19.0",
+		"autoprefixer": "^10.4.0",
+		"eslint-config-xo": "^0.39.0",
+		"eslint-config-xo-react": "^0.26.0",
+		"eslint-plugin-react": "^7.28.0",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"shx": "^0.3.4",
+		"spacery": "^0.0.6",
+		"xo": "^0.25.3"
+	}
+}
