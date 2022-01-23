@@ -8,6 +8,7 @@
 	"author": "Reaper <ahoy@barelyhuman.dev>",
 	"main": "index.js",
 	"scripts": {
+		"build": "pnpm -r build",
 		"build:components": "pnpm -r --filter ./components run build",
 		"build:website": "pnpm -r --filter ./www run build",
 		"preinstall": "npx only-allow pnpm",

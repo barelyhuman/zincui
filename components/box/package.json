@@ -27,7 +27,6 @@
 		"zinccolors": "github:barelyhuman/zinccolors"
 	},
 	"devDependencies": {
-		"@agney/babel-plugin-goober-css-prop": "^0.0.0",
 		"@babel/preset-env": "^7.16.11",
 		"babel-plugin-macros": "^3.1.0",
 		"babel-plugin-twin": "^1.0.2",
