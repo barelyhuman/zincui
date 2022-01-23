@@ -52,3 +52,11 @@ body {
 pre {
 	font-size: 15px;
 }
+
+.flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}

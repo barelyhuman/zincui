@@ -8,6 +8,8 @@ import {css} from 'goober'
 import {data as tableData, fields} from '../mock/table'
 import roles from 'zinccolors/roles'
 
+import Image from 'next/image'
+
 const borderStyle = css`
 	border: 1px solid var(--dimmer);
 	border-radius: 4px;
@@ -22,18 +24,21 @@ const tableWidth = css`
 	width: 100%;
 `
 
-const BorderBox = props => {
+const BorderBox = (props) => {
 	return <Box className={borderStyle} {...props} />
 }
 
-const SurfaceBox = props => {
+const SurfaceBox = (props) => {
 	return <Box className={surfaceStyle} {...props} />
 }
 
 const Home = () => {
 	return (
 		<>
-			<Box marginX-12>
+			<Box margin-12 className="flex align-center">
+				<Box>
+					<Image src="/logo.png" width="64" height="64" />
+				</Box>
 				<h1>ZincUI</h1>
 			</Box>
 			<Box marginX-12>
