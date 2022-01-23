@@ -35,7 +35,11 @@ cat <<EOF > package.json
 	},
 	"devDependencies": {
 		"postcss": "^8.4.5",
-		"tailwindcss": "^3.0.7"
+		"tailwindcss": "^3.0.7",
+		"@babel/cli": "^7.2.3",
+		"@babel/core": "^7.2.2",
+		"@babel/preset-react": "^7.0.0",
+		"@babel/register": "^7.0.0"
 	},
 	"engines": {
 		"node": ">=12"
