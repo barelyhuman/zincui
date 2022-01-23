@@ -1,4 +1,7 @@
-# zincui
+<p align="center">
+    <img src="www/public/logo.png" height="120" width="120"/>
+</p>
+<h1 align="center">zincui</h1>
 
 > Monochromatic Design System with React Components
 
