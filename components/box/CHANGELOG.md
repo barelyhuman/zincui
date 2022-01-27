@@ -1,5 +1,11 @@
 # @zincui/box
 
+## 0.0.5
+
+### Patch Changes
+
+- CJS compatible output for working with nextjs since nextjs won't work with module properly right now
+
 ## 0.0.4
 
 ### Patch Changes

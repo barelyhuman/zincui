@@ -1,6 +1,6 @@
 {
 	"name": "@zincui/table",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -13,7 +13,8 @@
 	},
 	"babel": {
 		"presets": [
-			"@babel/preset-react"
+			"@babel/preset-react",
+			"@babel/preset-env"
 		]
 	},
 	"xo": {
@@ -21,18 +22,19 @@
 		"prettier": "true"
 	},
 	"dependencies": {
-		"@zincui/box": "0.0.4",
+		"@babel/preset-env": "^7.16.11",
+		"@zincui/box": "0.0.5",
 		"goober": "^2.1.7",
 		"nanoid": "^3.2.0",
 		"zinccolors": "github:barelyhuman/zinccolors"
 	},
 	"devDependencies": {
-		"postcss": "^8.4.5",
-		"tailwindcss": "^3.0.7",
 		"@babel/cli": "^7.2.3",
 		"@babel/core": "^7.2.2",
 		"@babel/preset-react": "^7.0.0",
-		"@babel/register": "^7.0.0"
+		"@babel/register": "^7.0.0",
+		"postcss": "^8.4.5",
+		"tailwindcss": "^3.0.7"
 	},
 	"engines": {
 		"node": ">=12"
