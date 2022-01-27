@@ -48,13 +48,13 @@ importers:
       '@babel/register': ^7.0.0
       babel-plugin-macros: ^3.1.0
       babel-plugin-twin: ^1.0.2
-      flexery: ^0.0.3
+      flexery: ^0.0.4
       postcss: ^8.4.5
       spacery: ^0.0.7
       tailwindcss: ^3.0.7
       zinccolors: github:barelyhuman/zinccolors
     dependencies:
-      flexery: 0.0.3
+      flexery: 0.0.4
       spacery: 0.0.7
       zinccolors: github.com/barelyhuman/zinccolors/3c2f4af588045b45ce2d8e08cca9df9050acae65
     devDependencies:
@@ -3885,8 +3885,8 @@ packages:
     resolution: {integrity: sha512-8/sOawo8tJ4QOBX8YlQBMxL8+RLZfxMQOif9o0KUKTNTjMYElWPE0r/m5VNFxTRd0NSw8qSy8dajrwX4RYI1Hw==}
     dev: true
 
-  /flexery/0.0.3:
-    resolution: {integrity: sha512-VlgVcdbNFO4OlzMSOnjfNaouO219pywCQcxjeS0KusimGC6QnQY5oF4o8jyQMuREwg8ieDFMo4ZDVnrIRmthBQ==}
+  /flexery/0.0.4:
+    resolution: {integrity: sha512-2yeDGJ/8B2Kn5N9FpeX79eHWYkS8ygkg6mjuOJT53zOf0GK4VA/cY8ngU8ZM7VYmpP2JOD4KiKiHCx/CXAtf5w==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16.7'

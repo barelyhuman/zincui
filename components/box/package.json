@@ -1,6 +1,6 @@
 {
 	"name": "@zincui/box",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -23,7 +23,7 @@
 		}
 	},
 	"dependencies": {
-		"flexery": "^0.0.3",
+		"flexery": "^0.0.4",
 		"spacery": "^0.0.7",
 		"zinccolors": "github:barelyhuman/zinccolors"
 	},

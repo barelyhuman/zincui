@@ -1,6 +1,6 @@
 {
 	"name": "@zincui/input",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -21,7 +21,7 @@
 		"prettier": "true"
 	},
 	"dependencies": {
-		"@zincui/box": "0.0.3",
+		"@zincui/box": "0.0.4",
 		"goober": "^2.1.7",
 		"zinccolors": "github:barelyhuman/zinccolors"
 	},
