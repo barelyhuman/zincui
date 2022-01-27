@@ -53,10 +53,14 @@ pre {
 	font-size: 15px;
 }
 
-.flex {
-	display: flex;
+.text-dim {
+	color: var(--dim);
 }
 
-.align-center {
-	align-items: center;
+.rounded {
+	border-radius: 50%;
+}
+
+.surface {
+	background-color: var(--surface);
 }

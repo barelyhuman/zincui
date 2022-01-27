@@ -35,14 +35,32 @@ const SurfaceBox = (props) => {
 const Home = () => {
 	return (
 		<>
-			<Box margin-12 className="flex align-center">
-				<Box>
+			<Box
+				margin-12
+				flex
+				center
+				style={{height: '100vh', flexDirection: 'column'}}
+			>
+				<Box flex center>
 					<Image src="/logo.png" width="64" height="64" />
+					<h1>ZincUI</h1>
 				</Box>
-				<h1>ZincUI</h1>
+				<p className="text-dim">
+					Monochromatic Design System with React Components
+				</p>
+				<a href="#installation">
+					<Box
+						flex
+						center
+						className="surface rounded"
+						style={{height: 32, width: 32}}
+					>
+						<span>&darr;</span>
+					</Box>
+				</a>
 			</Box>
 			<Box marginX-12>
-				<h2>Installation</h2>
+				<h2 id="installation">Installation</h2>
 				<SurfaceBox padding-16>
 					<pre>npm install @zincui/&lt;component&gt;</pre>
 				</SurfaceBox>

@@ -1,14 +1,24 @@
 import React from 'react'
-import {modsToStyle} from 'spacery'
+import {modsToStyle as spaceModsToStyle} from 'spacery'
+import {modsToStyle as flexModsToStyle} from 'flexery'
 
-const Box = ({elm = 'div', children, ...props}) => {
-	const {style, sanitizedProps} = modsToStyle(props, 'px') // Pass dimension as an empty string so it used the actual numbers
+const Box = ({elm = 'div', style, children, ...props}) => {
+	const {style: spaceModifierStyles, sanitizedProps} = spaceModsToStyle(
+		props,
+		'px'
+	)
+	const {style: flexModifierStyles, sanitizedProps: finalSantizedProps} =
+		flexModsToStyle(sanitizedProps)
 
 	return React.createElement(
 		elm,
 		{
-			style,
-			...sanitizedProps,
+			style: {
+				...spaceModifierStyles,
+				...flexModifierStyles,
+				...style,
+			},
+			...finalSantizedProps,
 		},
 		children
 	)
