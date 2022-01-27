@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from '@zincui/box'
 import {css} from 'goober'
-import roles from 'zinccolors/roles'
+import roles from 'zinccolors/roles.js'
 
 const inputStyle = css`
 	background: ${roles.surface};

@@ -1,6 +1,6 @@
 import React from 'react'
 import {css} from 'goober'
-import roles from 'zinccolors/roles'
+import roles from 'zinccolors/roles.js'
 
 const isValidSize = value => {
 	return !(Number(value.split('B')[0]) > 110)

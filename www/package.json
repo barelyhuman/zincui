@@ -1,6 +1,6 @@
 {
 	"name": "www",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"private": true,
 	"scripts": {
 		"build": "next build",
@@ -9,9 +9,9 @@
 	},
 	"dependencies": {
 		"@zincui/box": "^0.0.6",
-		"@zincui/button": "^0.0.6",
-		"@zincui/input": "^0.0.6",
-		"@zincui/table": "^0.0.6",
+		"@zincui/button": "^0.0.7",
+		"@zincui/input": "^0.0.7",
+		"@zincui/table": "^0.0.7",
 		"goober": "^2.1.7",
 		"goober-autoprefixer": "^1.2.1",
 		"next": "12.0.8",

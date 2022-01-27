@@ -1,5 +1,15 @@
 # www
 
+## 0.0.6
+
+### Patch Changes
+
+- fix native esm imports
+- Updated dependencies
+  - @zincui/button@0.0.7
+  - @zincui/input@0.0.7
+  - @zincui/table@0.0.7
+
 ## 0.0.5
 
 ### Patch Changes

@@ -1,7 +1,7 @@
 import {css} from 'goober'
 import React from 'react'
 import Box from '@zincui/box'
-import roles from 'zinccolors/roles'
+import roles from 'zinccolors/roles.js'
 import {nanoid} from 'nanoid'
 
 const tableStyle = css`

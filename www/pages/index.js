@@ -6,7 +6,7 @@ import Table from '@zincui/table'
 
 import {css} from 'goober'
 import {data as tableData, fields} from '../mock/table'
-import roles from 'zinccolors/roles'
+import roles from 'zinccolors/roles.js'
 
 import Image from 'next/image'
 

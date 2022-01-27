@@ -21,7 +21,8 @@
 		"prettier": "true",
 		"rules": {
 			"unicorn/prefer-module": "off",
-			"react/prop-types": "off"
+			"react/prop-types": "off",
+			"import/extensions": "off"
 		}
 	},
 	"prettier": {

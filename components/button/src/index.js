@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from '@zincui/box'
 import {css, setup} from 'goober'
-import roles from 'zinccolors/roles'
+import roles from 'zinccolors/roles.js'
 
 setup(React.createElement)
 
