@@ -7,8 +7,10 @@ const Box = ({elm = 'div', style, children, ...props}) => {
 		props,
 		'px'
 	)
-	const {style: flexModifierStyles, sanitizedProps: finalSantizedProps} =
-		flexModsToStyle(sanitizedProps)
+	const {
+		style: flexModifierStyles,
+		sanitizedProps: finalSantizedProps,
+	} = flexModsToStyle(sanitizedProps)
 
 	return React.createElement(
 		elm,

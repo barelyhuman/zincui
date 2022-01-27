@@ -24,11 +24,11 @@ const tableWidth = css`
 	width: 100%;
 `
 
-const BorderBox = (props) => {
+const BorderBox = props => {
 	return <Box className={borderStyle} {...props} />
 }
 
-const SurfaceBox = (props) => {
+const SurfaceBox = props => {
 	return <Box className={surfaceStyle} {...props} />
 }
 

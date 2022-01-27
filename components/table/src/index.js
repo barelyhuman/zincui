@@ -25,7 +25,7 @@ const tableHeaderStyle = css`
 `
 
 const Table = ({className, data, fields, ...props}) => {
-	const headers = fields.map((h) => (
+	const headers = fields.map(h => (
 		<th
 			key={`header-${h.key}`}
 			className={[tableDataAndHeaderStyle, tableHeaderStyle].join(' ')}
@@ -34,7 +34,7 @@ const Table = ({className, data, fields, ...props}) => {
 		</th>
 	))
 
-	const rows = data.map((item) => (
+	const rows = data.map(item => (
 		<Row key={nanoid()} data={item} fields={fields} />
 	))
 	return (
@@ -50,7 +50,7 @@ const Table = ({className, data, fields, ...props}) => {
 const Row = ({data, fields}) => {
 	return (
 		<tr>
-			{fields.map((field) => (
+			{fields.map(field => (
 				<td
 					key={`data-${field.key}-${nanoid()}`}
 					className={[tableDataAndHeaderStyle].join(' ')}
