@@ -3,6 +3,7 @@ import Button from '@zincui/button'
 import Box from '@zincui/box'
 import Input from '@zincui/input'
 import Table from '@zincui/table'
+import Loader from '@zincui/loader'
 
 import {css} from 'goober'
 import {data as tableData, fields} from '../mock/table'
@@ -120,6 +121,14 @@ const Home = () => {
 					<Input success margin-8 placeholder="Success" />
 					<Input error margin-8 placeholder="Error" />
 					<Input margin-8 large placeholder="large" />
+				</BorderBox>
+			</Box>
+			<Box padding-12>
+				<h3>Loader (@zincui/loader)</h3>
+				<BorderBox padding-16 flex>
+					<Loader flex flex-1 marginX-12 />
+					<Loader flex flex-1 marginX-12 success delay={250} />
+					<Loader flex flex-1 marginX-12 error delay={750} />
 				</BorderBox>
 			</Box>
 			<Box padding-12>

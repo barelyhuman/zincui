@@ -1,14 +1,6 @@
-#!/bin/bash
-
-new_project="components/$1"
-current=$(pwd)
-mkdir -p $new_project
-cd $new_project
-touch package.json 
-cat <<EOF > package.json
 {
-	"name": "@zincui/$1",
-	"version": "0.0.0",
+	"name": "@zincui/loader",
+	"version": "0.0.1",
 	"exports": {
 		".": {
 			"import": "./dist/index.mjs",
@@ -40,7 +32,9 @@ cat <<EOF > package.json
 		}
 	},
 	"dependencies": {
-		"@zincui/box": "^0.0.5",
+		"@zincui/box": "^0.0.7",
+		"goober": "^2.1.7",
+		"nanoid": "^3.2.0",
 		"zinccolors": "github:barelyhuman/zinccolors"
 	},
 	"engines": {
@@ -53,8 +47,3 @@ cat <<EOF > package.json
 		"esbuild": "^0.14.14"
 	}
 }
-EOF
-mkdir -p src 
-touch src/index.js
-cd $current
-pnpm install

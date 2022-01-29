@@ -54,7 +54,7 @@ importers:
 
   components/button:
     specifiers:
-      '@zincui/box': 0.0.6
+      '@zincui/box': 0.0.7
       esbuild: ^0.14.14
       goober: ^2.1.7
       zinccolors: github:barelyhuman/zinccolors
@@ -67,7 +67,7 @@ importers:
 
   components/input:
     specifiers:
-      '@zincui/box': 0.0.6
+      '@zincui/box': 0.0.7
       esbuild: ^0.14.14
       goober: ^2.1.7
       zinccolors: github:barelyhuman/zinccolors
@@ -78,9 +78,24 @@ importers:
     devDependencies:
       esbuild: 0.14.14
 
+  components/loader:
+    specifiers:
+      '@zincui/box': ^0.0.7
+      esbuild: ^0.14.14
+      goober: ^2.1.7
+      nanoid: ^3.2.0
+      zinccolors: github:barelyhuman/zinccolors
+    dependencies:
+      '@zincui/box': link:../box
+      goober: 2.1.7
+      nanoid: 3.2.0
+      zinccolors: github.com/barelyhuman/zinccolors/3c2f4af588045b45ce2d8e08cca9df9050acae65
+    devDependencies:
+      esbuild: 0.14.14
+
   components/table:
     specifiers:
-      '@zincui/box': 0.0.6
+      '@zincui/box': 0.0.7
       esbuild: ^0.14.14
       goober: ^2.1.7
       nanoid: ^3.2.0
@@ -95,10 +110,11 @@ importers:
 
   www:
     specifiers:
-      '@zincui/box': ^0.0.6
-      '@zincui/button': ^0.0.7
-      '@zincui/input': ^0.0.7
-      '@zincui/table': ^0.0.7
+      '@zincui/box': ^0.0.7
+      '@zincui/button': ^0.0.8
+      '@zincui/input': ^0.0.8
+      '@zincui/loader': ^0.0.1
+      '@zincui/table': ^0.0.8
       eslint: 8.7.0
       eslint-config-next: 12.0.8
       goober: ^2.1.7
@@ -111,6 +127,7 @@ importers:
       '@zincui/box': link:../components/box
       '@zincui/button': link:../components/button
       '@zincui/input': link:../components/input
+      '@zincui/loader': link:../components/loader
       '@zincui/table': link:../components/table
       goober: 2.1.7
       goober-autoprefixer: 1.2.1

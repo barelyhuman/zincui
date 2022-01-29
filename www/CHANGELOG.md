@@ -1,5 +1,13 @@
 # www
 
+## 0.0.8
+
+### Patch Changes
+
+- Add loader component and it's styles
+- Updated dependencies
+  - @zincui/loader@0.0.1
+
 ## 0.0.7
 
 ### Patch Changes
