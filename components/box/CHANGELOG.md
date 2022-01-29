@@ -1,5 +1,11 @@
 # @zincui/box
 
+## 0.0.7
+
+### Patch Changes
+
+- Aestheical changes to components and few changes to the website animation
+
 ## 0.0.6
 
 ### Patch Changes

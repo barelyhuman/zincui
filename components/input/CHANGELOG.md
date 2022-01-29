@@ -1,5 +1,13 @@
 # @zincui/input
 
+## 0.0.8
+
+### Patch Changes
+
+- Aestheical changes to components and few changes to the website animation
+- Updated dependencies
+  - @zincui/box@0.0.7
+
 ## 0.0.7
 
 ### Patch Changes

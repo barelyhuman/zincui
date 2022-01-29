@@ -1,5 +1,16 @@
 # www
 
+## 0.0.7
+
+### Patch Changes
+
+- Aestheical changes to components and few changes to the website animation
+- Updated dependencies
+  - @zincui/box@0.0.7
+  - @zincui/button@0.0.8
+  - @zincui/input@0.0.8
+  - @zincui/table@0.0.8
+
 ## 0.0.6
 
 ### Patch Changes
