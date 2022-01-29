@@ -44,12 +44,12 @@ importers:
   components/box:
     specifiers:
       esbuild: ^0.14.14
-      flexery: ^0.0.4
-      spacery: ^0.0.7
+      flexery: ^0.0.5
+      spacery: ^0.0.8
       zinccolors: github:barelyhuman/zinccolors
     dependencies:
-      flexery: 0.0.4
-      spacery: 0.0.7
+      flexery: 0.0.5
+      spacery: 0.0.8
       zinccolors: github.com/barelyhuman/zinccolors/3c2f4af588045b45ce2d8e08cca9df9050acae65
     devDependencies:
       esbuild: 0.14.14
@@ -3063,8 +3063,8 @@ packages:
     resolution: {integrity: sha512-8/sOawo8tJ4QOBX8YlQBMxL8+RLZfxMQOif9o0KUKTNTjMYElWPE0r/m5VNFxTRd0NSw8qSy8dajrwX4RYI1Hw==}
     dev: true
 
-  /flexery/0.0.4:
-    resolution: {integrity: sha512-2yeDGJ/8B2Kn5N9FpeX79eHWYkS8ygkg6mjuOJT53zOf0GK4VA/cY8ngU8ZM7VYmpP2JOD4KiKiHCx/CXAtf5w==}
+  /flexery/0.0.5:
+    resolution: {integrity: sha512-eAyqABm5J8WhcSUdiSRuF/x/EyXQ79yl3Ptt3ITS4z6bbre7AbHyKLQKXE2kLpOuETopH2lPZIz4FEOPARw4Jg==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16.7'
@@ -5650,8 +5650,8 @@ packages:
       react: '>=16.7'
     dev: true
 
-  /spacery/0.0.7:
-    resolution: {integrity: sha512-7+K7Qh/SspX7hKcuGSQusykjCd9MaTmS3AwebkUrTovmKK+vd/o2PVPGrTN6X1erpT+BTJ76uclPNEN4f9Ut8g==}
+  /spacery/0.0.8:
+    resolution: {integrity: sha512-lnvqBK344rHdSvm0ALgVeH/SEhzJPbJ57GDL5oI2qDe6Atp0NC+yTSDYI8ucexKdt+toySCz5BcHf6t0bHD8bA==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16.7'
