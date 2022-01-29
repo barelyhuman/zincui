@@ -64,3 +64,29 @@ pre {
 .surface {
 	background-color: var(--surface);
 }
+
+@keyframes wipe-in-right {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes wipe-in-down {
+	from {
+		clip-path: inset(0 0 100% 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+.wipe-in-right {
+	animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
+}
+
+.wipe-in-down {
+	animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+}

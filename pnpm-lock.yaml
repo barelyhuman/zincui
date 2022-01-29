@@ -54,7 +54,7 @@ importers:
 
   components/button:
     specifiers:
-      '@zincui/box': 0.0.5
+      '@zincui/box': 0.0.6
       esbuild: ^0.14.14
       goober: ^2.1.7
       zinccolors: github:barelyhuman/zinccolors
@@ -67,7 +67,7 @@ importers:
 
   components/input:
     specifiers:
-      '@zincui/box': 0.0.5
+      '@zincui/box': 0.0.6
       esbuild: ^0.14.14
       goober: ^2.1.7
       zinccolors: github:barelyhuman/zinccolors
@@ -80,7 +80,7 @@ importers:
 
   components/table:
     specifiers:
-      '@zincui/box': 0.0.5
+      '@zincui/box': 0.0.6
       esbuild: ^0.14.14
       goober: ^2.1.7
       nanoid: ^3.2.0
@@ -95,10 +95,10 @@ importers:
 
   www:
     specifiers:
-      '@zincui/box': ^0.0.5
-      '@zincui/button': ^0.0.5
-      '@zincui/input': ^0.0.5
-      '@zincui/table': ^0.0.5
+      '@zincui/box': ^0.0.6
+      '@zincui/button': ^0.0.7
+      '@zincui/input': ^0.0.7
+      '@zincui/table': ^0.0.7
       eslint: 8.7.0
       eslint-config-next: 12.0.8
       goober: ^2.1.7

@@ -22,7 +22,7 @@
 		"build:module": "esbuild src/index.js  --loader:.js=jsx --format=esm --platform=browser --target=node12 --outfile=dist/index.mjs",
 		"copy": "shx cp src/*.d.ts dist/",
 		"prepublishOnly": "npm run build",
-		"watch": "babel --watch 'src/*.js' --out-dir=dist"
+		"watch": "pnpm run build:module -- --watch"
 	},
 	"xo": {
 		"extends": "xo-react",

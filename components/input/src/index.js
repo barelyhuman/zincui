@@ -5,13 +5,25 @@ import roles from 'zinccolors/roles.js'
 
 const inputStyle = css`
 	background: ${roles.surface};
-	font-size: 15px;
-	font-weight: 500;
-	color: ${roles.text};
-	border: 2px solid ${roles.surface};
-	border-radius: 4px;
-	padding: 6px 16px;
 	outline: ${roles.base};
+	border: 2px solid ${roles.surface};
+	color: ${roles.text};
+
+	height: 48px;
+	min-width: 256px;
+	max-width: 100%;
+	width: auto;
+	font-size: 1em;
+	line-height: 1.25;
+	border-radius: 8px;
+	padding: 16px;
+
+	&.large {
+		font-size: 1.5em;
+		height: 60px;
+		border-radius: 8px;
+		padding: 24px;
+	}
 
 	&:focus {
 		border-color: ${roles.bright};
@@ -33,6 +45,7 @@ const Input = ({
 	onChange,
 	type,
 	success,
+	large,
 	error,
 	className,
 	...props
@@ -44,8 +57,12 @@ const Input = ({
 				inputStyle,
 				error && 'error',
 				success && 'success',
+				large && 'large',
 				className,
-			].join(' ')}
+			]
+				.filter(x => x)
+				.map(x => x.trim())
+				.join(' ')}
 			value={value}
 			type={type}
 			onChange={onChange}

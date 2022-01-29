@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Button from '@zincui/button'
 import Box from '@zincui/box'
 import Input from '@zincui/input'
@@ -33,6 +33,20 @@ const SurfaceBox = props => {
 }
 
 const Home = () => {
+	useEffect(() => {
+		// Smooth scroll
+		// eslint-disable-next-line no-undef
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault()
+
+				// eslint-disable-next-line no-undef,react/no-this-in-sfc
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth',
+				})
+			})
+		})
+	}, [])
 	return (
 		<>
 			<Box
@@ -41,7 +55,7 @@ const Home = () => {
 				center
 				style={{height: '100vh', flexDirection: 'column'}}
 			>
-				<Box flex center>
+				<Box flex center className="wipe-in-right">
 					<Image src="/logo.png" width="64" height="64" />
 					<h1>ZincUI</h1>
 				</Box>
@@ -49,14 +63,21 @@ const Home = () => {
 					Monochromatic Design System with React Components
 				</p>
 				<a href="#installation">
-					<Box
-						flex
-						center
-						className="surface rounded"
-						style={{height: 32, width: 32}}
-					>
-						<span>&darr;</span>
-					</Box>
+					<Button pill>
+						<svg
+							className="wipe-in-down"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
+								fill="currentColor"
+							/>
+						</svg>
+					</Button>
 				</a>
 			</Box>
 			<Box marginX-12>
@@ -78,14 +99,27 @@ const Home = () => {
 					<Button error margin-8>
 						Error
 					</Button>
+					<Button margin-8 pill>
+						Default Pill
+					</Button>
+					<Button success margin-8 pill>
+						Success Pill
+					</Button>
+					<Button error margin-8 pill>
+						Error Pill
+					</Button>
+					<Button margin-8 large>
+						Default Large
+					</Button>
 				</BorderBox>
 			</Box>
 			<Box padding-12>
 				<h3>Input (@zincui/input)</h3>
 				<BorderBox padding-16>
-					<Input marginR-8 placeholder="Default" />
-					<Input success marginR-8 placeholder="Success" />
-					<Input error marginR-8 placeholder="Error" />
+					<Input margin-8 placeholder="Default" />
+					<Input success margin-8 placeholder="Success" />
+					<Input error margin-8 placeholder="Error" />
+					<Input margin-8 large placeholder="large" />
 				</BorderBox>
 			</Box>
 			<Box padding-12>
