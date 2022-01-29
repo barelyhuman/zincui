@@ -18,8 +18,8 @@
 	"scripts": {
 		"prebuild": "rm -rf dist",
 		"build": "pnpm run build:cjs;pnpm run build:module; pnpm run copy",
-		"build:cjs": "esbuild src/index.js  --format=cjs --platform=node --target=node12 --outfile=dist/index.js",
-		"build:module": "esbuild src/index.js  --format=esm --platform=browser --target=node12 --outfile=dist/index.mjs",
+		"build:cjs": "esbuild src/index.js  --format=cjs --platform=node --target=node12 --outfile=dist/index.js --minify",
+		"build:module": "esbuild src/index.js  --format=esm --platform=browser --target=node12 --outfile=dist/index.mjs --minify",
 		"copy": "shx cp src/*.d.ts dist/",
 		"prepublishOnly": "npm run build"
 	},

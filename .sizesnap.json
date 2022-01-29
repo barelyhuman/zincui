@@ -1,0 +1,52 @@
+{
+	"components/box/dist/index.js": {
+		"size": "1.5KB",
+		"brotli": "691B",
+		"gzip": "760B"
+	},
+	"components/box/dist/index.mjs": {
+		"size": "857B",
+		"brotli": "415B",
+		"gzip": "472B"
+	},
+	"components/button/dist/index.js": {
+		"size": "2.19KB",
+		"brotli": "932B",
+		"gzip": "1.04KB"
+	},
+	"components/button/dist/index.mjs": {
+		"size": "2.4KB",
+		"brotli": "838B",
+		"gzip": "988B"
+	},
+	"components/input/dist/index.js": {
+		"size": "2.2KB",
+		"brotli": "922B",
+		"gzip": "1.02KB"
+	},
+	"components/input/dist/index.mjs": {
+		"size": "2.39KB",
+		"brotli": "825B",
+		"gzip": "964B"
+	},
+	"components/loader/dist/index.js": {
+		"size": "2.62KB",
+		"brotli": "1.15KB",
+		"gzip": "1.28KB"
+	},
+	"components/loader/dist/index.mjs": {
+		"size": "3.17KB",
+		"brotli": "1.12KB",
+		"gzip": "1.27KB"
+	},
+	"components/table/dist/index.js": {
+		"size": "2.2KB",
+		"brotli": "922B",
+		"gzip": "1.02KB"
+	},
+	"components/table/dist/index.mjs": {
+		"size": "2.65KB",
+		"brotli": "867B",
+		"gzip": "995B"
+	}
+}

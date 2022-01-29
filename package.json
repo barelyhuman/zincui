@@ -8,6 +8,7 @@
 	"author": "Reaper <ahoy@barelyhuman.dev>",
 	"main": "index.js",
 	"scripts": {
+		"size": "sizesnap",
 		"build": "pnpm -r build",
 		"build:components": "pnpm -r --filter ./components run build",
 		"build:website": "pnpm -r --filter ./www run build",
@@ -15,6 +16,11 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch:components": "pnpm -r --parallel --filter ./components run watch",
 		"watch:website": "pnpm -r --filter ./www run dev"
+	},
+	"sizesnap": {
+		"files": [
+			"./components/**/dist/*{.js,.mjs}"
+		]
 	},
 	"xo": {
 		"extends": "xo-react",
@@ -55,6 +61,7 @@
 		"eslint-plugin-react": "^7.28.0",
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"shx": "^0.3.4",
+		"sizesnap": "^0.1.0",
 		"spacery": "^0.0.6",
 		"xo": "^0.25.3"
 	}

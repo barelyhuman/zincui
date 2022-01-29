@@ -17,6 +17,7 @@ importers:
       eslint-plugin-react-hooks: ^4.3.0
       goober: ^2.1.7
       shx: ^0.3.4
+      sizesnap: ^0.1.0
       spacery: ^0.0.6
       twin.macro: ^2.8.2
       xo: ^0.25.3
@@ -36,6 +37,7 @@ importers:
       eslint-plugin-react: 7.28.0
       eslint-plugin-react-hooks: 4.3.0
       shx: 0.3.4
+      sizesnap: 0.1.0
       spacery: 0.0.6
       xo: 0.25.4
 
@@ -5524,6 +5526,12 @@ packages:
     dependencies:
       is-arrayish: 0.3.2
     dev: false
+
+  /sizesnap/0.1.0:
+    resolution: {integrity: sha512-wB3zZ71mjyxozAYDqcFI+y6Qr+UYDzSJc0b/zUyOPoQ1eppMK3taCA5oqiG86weFGKPbxEXiHLrZlhrX5MB6gw==}
+    engines: {node: '>=12'}
+    hasBin: true
+    dev: true
 
   /slash/2.0.0:
     resolution: {integrity: sha512-ZYKh3Wh2z1PpEXWr0MpSBZ0V6mZHAQfYevttO11c51CaWjGTaadiKZ+wVt1PbMlDV5qhMFslpZCemhwOK7C89A==}
