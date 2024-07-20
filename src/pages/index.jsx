@@ -41,12 +41,21 @@ export default () => {
               {variants.map((variantKey) => {
                 return (
                   <div class="flex flex-col gap-2 mt-10">
-                    <h3 class="font-semibold">
-                      {variantKey}: [
-                      {variantProperties[variantKey]
-                        .filter((innerKey) => innerKey !== "default")
-                        .join(",")}
-                      ]{" "}
+                    <h3 class="flex gap-2">
+                      <code class="bg-overlay p-2 rounded-md">
+                        {variantKey}={`{`}
+                        {variantProperties[variantKey]
+                          .filter((innerKey) => innerKey !== "default")
+                          .map((d, index, src) => {
+                            const isLast = index == src.length - 1;
+                            return (
+                              <span>
+                                "{d}"{isLast ? "" : "|"}
+                              </span>
+                            );
+                          })}
+                        {`}`}
+                      </code>
                     </h3>
                     <div class="flex gap-2 mt-1">
                       {d.forElements.map((el) => {
