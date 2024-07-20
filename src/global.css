@@ -2,53 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 32 57% 95%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 249 22% 12%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-  }
+:root {
+  --color-base: 32deg 57% 95%;
+  --color-surface: 35deg 100% 98%;
+  --color-overlay: 33deg 43% 91%;
+  --color-muted: 257deg 9% 61%;
+  --color-subtle: 248deg 12% 52%;
+  --color-text: 248deg 19% 40%;
+  --color-love: 343deg 35% 55%;
+  --color-gold: 35deg 81% 56%;
+  --color-rose: 3deg 53% 67%;
+  --color-pine: 197deg 53% 34%;
+  --color-foam: 189deg 30% 48%;
+  --color-iris: 268deg 21% 57%;
 }
 
-body{
-  @apply bg-background text-foreground;
+body.dark {
+  --color-base: 249deg 22% 12%;
+  --color-surface: 247deg 23% 15%;
+  --color-overlay: 248deg 25% 18%;
+  --color-muted: 249deg 12% 47%;
+  --color-subtle: 248deg 15% 61%;
+  --color-text: 245deg 50% 91%;
+  --color-love: 343deg 76% 68%;
+  --color-gold: 35deg 88% 72%;
+  --color-rose: 2deg 55% 83%;
+  --color-pine: 197deg 49% 38%;
+  --color-foam: 189deg 43% 73%;
+  --color-iris: 267deg 57% 78%;
+}
+
+body {
+  @apply bg-base text-text;
 }

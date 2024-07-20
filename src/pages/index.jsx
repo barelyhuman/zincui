@@ -8,7 +8,7 @@ export default () => {
   return (
     <Layout>
       <hgroup>
-        <h1 class="font-semibold">ZincUI</h1>
+        <h1 class="font-semibold">UI</h1>
         <p>Tailwind Styled HTML Primitives for the rest of the world</p>
       </hgroup>
       <section>
@@ -21,7 +21,9 @@ export default () => {
           }, {});
           return (
             <div>
-              <h2 class="font-bold">{d.name} Variants</h2>
+              <h2 class="font-bold text-xl">
+                <span class="capitalize">{d.name}</span> Variants
+              </h2>
               <h3 class="font-semibold">Default</h3>
               {d.forElements.map((el) => {
                 return (

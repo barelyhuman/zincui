@@ -14,7 +14,8 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "preact": "^10.22.1",
-    "tailwind-merge": "^2.4.0"
+    "tailwind-merge": "^2.4.0",
+    "vite-plugin-webfont-dl": "^3.9.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
