@@ -7,37 +7,47 @@
  */
 
 /**@type {StyleDef[]}*/
-export const styles = [];
+export const styles = []
 
 defineStyle({
-  name: "button",
-  forElements: ["button"],
-  base: "animate-enter inline-flex h-12 items-center justify-center px-6 font-medium transition focus:outline-none focus:ring",
+  name: 'button',
+  forElements: ['button'],
+  base: 'inline-flex h-12 items-center justify-center px-6 font-medium transition focus:outline-none focus:ring',
   variants: {
     variants: {
       variant: {
-        default: "bg-muted/10 hover:bg-muted/20 rounded-full",
+        default: 'bg-muted/10 hover:bg-muted/20 rounded-full',
         ghost:
-          "rounded-md px-2.5 py-1.5 transition hover:bg-muted/10 focus:outline-none focus:ring focus:ring-inset",
-        link: "font-medium bg-base hover:bg-base text-iris underline-offset-2 after:inline-block after:whitespace-pre hover:underline link",
+          'rounded-md px-2.5 py-1.5 transition hover:bg-muted/10 focus:outline-none focus:ring focus:ring-inset',
+        link: 'font-medium bg-base hover:bg-base text-iris underline-offset-2 after:inline-block after:whitespace-pre hover:underline link',
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-7 px-3.5",
-        lg: "h-11 px-8",
-        icon: "h-10 w-10",
+        default: 'h-10 px-4 py-2',
+        sm: 'h-7 px-3.5',
+        lg: 'h-11 px-8',
+        icon: 'h-10 w-10',
       },
     },
     defaultVariants: {
-      variant: "default",
-      size: "default",
+      variant: 'default',
+      size: 'default',
     },
   },
-});
+})
+
+defineStyle({
+  name: 'card',
+  forElements: ['div'],
+  base: 'flex rounded-md p-5 h-full w-full flex-col bg-surface transition target:ring focus:outline-none focus:ring hoverable size-sm',
+  variants: {
+    variants: {},
+    defaultVariants: {},
+  },
+})
 
 /**
  * @param {StyleDef} style
  */
 function defineStyle(style) {
-  styles.push(style);
+  styles.push(style)
 }
