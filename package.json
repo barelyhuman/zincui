@@ -4,21 +4,32 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "prettier": "@barelyhuman/prettier-config",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
+    "@barelyhuman/prettier-config": "^1.1.0",
     "@preact/preset-vite": "^2.9.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "preact": "^10.22.1",
+    "prettier": "^3.3.3",
     "tailwind-merge": "^2.4.0",
     "vite-plugin-webfont-dl": "^3.9.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "husky": "^9.1.1",
+    "lint-staged": "^15.2.7",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.5",
     "vite": "^5.3.3"
